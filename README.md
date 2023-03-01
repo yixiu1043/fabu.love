@@ -36,7 +36,7 @@ demo地址: https://fabu.apppills.com/
 #### 使用docker运行（建议）
 
 > ps：请先安装docker
-1. 下载源码  `git clone https://github.com/HeadingMobile/fabu.love.git`
+1. 下载源码  `git clone https://github.com/yixiu1043/fabu.love.git`
 2. 执行`cd docker`
 3. 执行`docker-compose up -d --build`
 4. 打开浏览器 http://0.0.0.0:9898
@@ -54,20 +54,14 @@ demo地址: https://fabu.apppills.com/
 npm install -g pm2 babel-cli
 ```
 
-* 安装 cnpm
-
-```bash
-npm install -g cnpm --registry=https://registry.npm.taobao.org
-```
-
-1.clone 下载代码 `git clone https://github.com/HeadingMobile/LoveFabu.git`
+1.clone 下载代码 `git clone https://github.com/yixiu1043/fabu.love.git`
 
 2.运行server端
 
 ```bash
 #进入项目根目录
 cd server
-cnpm install  #安装依赖
+npm install  #安装依赖
 npm start
 
 =============>>out
@@ -82,7 +76,7 @@ App is listening on 9898.
 
 ```Bash
 cd client
-cnpm install
+npm install
 npm run build #正式环境可以用该命令编译静态文件交给nginx
 npm run dev  #本地运行可以使用该命令
 
