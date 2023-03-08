@@ -230,9 +230,7 @@
         })
       },
       getCreatTime(date) {
-        console.log(date)
-        let releaseDate = new Date(date)
-        return `${releaseDate.getFullYear()}-${releaseDate.getMonth() + 1}-${releaseDate.getDate()}`
+        return new Date(date).toFormat()
       },
       getAppSize(size) {
         return `${(size / 1024 / 1024).toFixed(2)}M`
@@ -396,14 +394,14 @@
     width: 18px;
     height: 16px;
     background-size: 18px 18px;
-    background-image: url("../../assets/sign_grey.png");
+    background-image: url("../../common/assets/sign_grey.png");
   }
   .version-table-one-lighting {
     display: inline-block;
     width: 18px;
     height: 16px;
     background-size: 18px 18px;
-    background-image: url("../../assets/sign_now.png");
+    background-image: url("../../common/assets/sign_now.png");
   }
   .appVersion-wrapper .version-table .cell {
     text-align: center;
